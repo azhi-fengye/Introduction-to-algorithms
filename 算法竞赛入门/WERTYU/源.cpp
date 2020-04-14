@@ -1,14 +1,15 @@
 #include<stdio.h>
-char s[] = "`1234567890-=qwertyuiop[]\asdfghjkl;'zxcvbnm,./";
-int main()
+char s[] = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
+int main(void)
 {
-	int i, c;
+	int i, c,ast;
+	scanf_s("%d",&ast);
 	while ((c=getchar())!=EOF)
 	{
-		for (i = 1; s[i] && s[i] != c; i++);//终止条件为a[i]==0（也就是s[i]里面没有值与s[i]==c（s[i]==输入的值）
+		for (i = 1; s[i] && s[i] != c; i++);
 		if (s[i])
 		{
-			putchar(s[i - 1]);
+			putchar(s[i+(ast%26)]);
 		}
 		else
 		{

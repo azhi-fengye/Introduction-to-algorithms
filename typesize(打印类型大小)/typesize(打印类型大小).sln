@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "typesize(打印类型大小)", "typesize(打印类型大小).vcxproj", "{F48AD6EA-7143-49C9-BCDB-048F9AA1EB48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F48AD6EA-7143-49C9-BCDB-048F9AA1EB48}.Debug|x64.ActiveCfg = Debug|x64
+		{F48AD6EA-7143-49C9-BCDB-048F9AA1EB48}.Debug|x64.Build.0 = Debug|x64
+		{F48AD6EA-7143-49C9-BCDB-048F9AA1EB48}.Debug|x86.ActiveCfg = Debug|Win32
+		{F48AD6EA-7143-49C9-BCDB-048F9AA1EB48}.Debug|x86.Build.0 = Debug|Win32
+		{F48AD6EA-7143-49C9-BCDB-048F9AA1EB48}.Release|x64.ActiveCfg = Release|x64
+		{F48AD6EA-7143-49C9-BCDB-048F9AA1EB48}.Release|x64.Build.0 = Release|x64
+		{F48AD6EA-7143-49C9-BCDB-048F9AA1EB48}.Release|x86.ActiveCfg = Release|Win32
+		{F48AD6EA-7143-49C9-BCDB-048F9AA1EB48}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F44027BC-68D7-4638-BB64-4C07DC2D838C}
+	EndGlobalSection
+EndGlobal

@@ -1,8 +1,8 @@
 #include<stdio.h>
-#include<inttypes.h>
+#include<inttypes.h>//支持可移植类型
 int main(void)
 {
-	int32_t me32;
+	int32_t me32;//me32是一个32位有符号整数变量
 	me32 = 45933945;
 	printf_s("First,assume int32_t is int:");
 	printf_s("me32=%d\n", me32);

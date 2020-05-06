@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{CBACDE43-B0F3-43F5-9233-EA3391824663}</ProjectGuid>
-    <RootNamespace>My43praise2</RootNamespace>
+    <ProjectGuid>{50EBD890-2230-4173-B08D-A1F1A3553C09}</ProjectGuid>
+    <RootNamespace>My44pizza在比萨饼程序中使用已定义的常量</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

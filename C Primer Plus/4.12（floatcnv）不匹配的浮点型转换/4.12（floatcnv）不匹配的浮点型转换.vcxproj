@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{CBACDE43-B0F3-43F5-9233-EA3391824663}</ProjectGuid>
-    <RootNamespace>My43praise2</RootNamespace>
+    <ProjectGuid>{C4F02825-1FCB-48D6-AA85-8649815FDBDF}</ProjectGuid>
+    <RootNamespace>My412floatcnv不匹配的浮点型转换</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

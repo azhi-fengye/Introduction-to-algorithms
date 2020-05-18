@@ -10,7 +10,7 @@ int main()
 	scanf_s("%s",&name,sizeof(name));//与书上不一样是因为scanf_s需要为每个占位符提供两个参数，一个用于提供要写入的地址，另一个用于提供第一个的大小
 	printf_s("%s,what's your werght in pounds?\n", name);//你的体重是多少?
 	scanf_s("%lf", &weight);//double类型的输入转换符得使用lf
-	size = sizeof name;
+	size = sizeof(name);
 	letters = strlen(name);
 	volume = weight / DENSITY;
 	printf_s("Well,%s,your volue is %2.2f cubic feet.\n", name, volume);//嗯，name，你的体积是%2.2f立方英尺。

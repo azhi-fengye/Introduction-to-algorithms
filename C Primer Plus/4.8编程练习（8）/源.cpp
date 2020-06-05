@@ -5,14 +5,24 @@
 的燃料测量方案（值越低越好）。使用#define创建符号常量或使用const限定符创建变量来表示两个转换系数。
 */
 #include<stdio.h>
-#define A_mile_kilometer 1.609
-#define A_gallon_litre 3.785
+#define A_mile_kilometer 1.609 //每英里等于1.609千米
+#define A_gallon_litre 3.785 //每加仑等于3.785升
 int main(void)
 {
-	double mileage, value_gasoline;
+	double Mileage, Value_gasoline, Miles_per_gallon,Km_mileage, Litre_gasoline_gallon,A_Km_Litre;
+	/*
+	mileage:英里，value_gasoline:加仑数，Mile_per_gallon:每加仑走的英里书数;
+	Km_mileage:里程以千计算；Litre_gasoline_gallon:消耗的汽油以升计.
+	*/
 	printf_s("请输入旅行的里程(英里)：\n");
-	scanf_s("%f", &mileage);
+	scanf_s("%lf", &Mileage);
 	printf_s("请输入消耗的汽油量（加仑）：\n");
-	scanf_s("%f", &value_gasoline);
-
+	scanf_s("%lf", &Value_gasoline);
+	Km_mileage = A_mile_kilometer * Mileage;
+	Litre_gasoline_gallon = Value_gasoline * A_gallon_litre;
+	Miles_per_gallon=Mileage/ Value_gasoline;
+	A_Km_Litre =Litre_gasoline_gallon/Km_mileage*100;
+	printf_s("消耗每加仑汽油行驶的英里数：%.1f.\n", Miles_per_gallon);
+	printf_s("每100公里消耗%.1f升汽油\n", A_Km_Litre);
+	return 0;
 }

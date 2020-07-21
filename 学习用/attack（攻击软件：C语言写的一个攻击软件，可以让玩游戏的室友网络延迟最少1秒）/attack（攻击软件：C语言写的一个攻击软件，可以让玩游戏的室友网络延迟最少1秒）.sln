@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "attack（攻击软件：C语言写的一个攻击软件，可以让玩游戏的室友网络延迟最少1秒）", "attack（攻击软件：C语言写的一个攻击软件，可以让玩游戏的室友网络延迟最少1秒）.vcxproj", "{912F454D-FF9F-4C65-AFE5-028FC86F7548}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{912F454D-FF9F-4C65-AFE5-028FC86F7548}.Debug|x64.ActiveCfg = Debug|x64
+		{912F454D-FF9F-4C65-AFE5-028FC86F7548}.Debug|x64.Build.0 = Debug|x64
+		{912F454D-FF9F-4C65-AFE5-028FC86F7548}.Debug|x86.ActiveCfg = Debug|Win32
+		{912F454D-FF9F-4C65-AFE5-028FC86F7548}.Debug|x86.Build.0 = Debug|Win32
+		{912F454D-FF9F-4C65-AFE5-028FC86F7548}.Release|x64.ActiveCfg = Release|x64
+		{912F454D-FF9F-4C65-AFE5-028FC86F7548}.Release|x64.Build.0 = Release|x64
+		{912F454D-FF9F-4C65-AFE5-028FC86F7548}.Release|x86.ActiveCfg = Release|Win32
+		{912F454D-FF9F-4C65-AFE5-028FC86F7548}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9B3B34F-05CA-446D-B776-9993F73467F4}
+	EndGlobalSection
+EndGlobal

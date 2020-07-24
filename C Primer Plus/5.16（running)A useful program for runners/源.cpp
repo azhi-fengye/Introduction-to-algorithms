@@ -29,6 +29,6 @@ int main(void)
 	msec = (int)mtime % S_PER_M;//求出剩余的秒数
 	printf_s("You ran %1.2f km(%1.2f miles) in %d min,%d sec.\n",distk,distk,min,sec);//You ran %1.2fkm(%1.2f miles) in %dmin,%dsec.你在%d分%d秒内跑了%1.2f公里（%1.2f英里）
 	printf_s("That pace corresponds to running a mile in %d min,", mmin);//这个速度相当于在%d分内跑一英里，
-	printf_s("%d sec.\nYour average speed was %1.2f mph.\n", msec, rate);//%d秒.你的平均速度为%1.2fmph."
+	printf_s("%d sec.\nYour average speed was %1.2f mph.\n", msec, rate);//%d秒.你的平均速度为%1.2fmph."（mph:每小时英里数)
 	return 0;
 }

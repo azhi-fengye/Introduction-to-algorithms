@@ -1,12 +1,9 @@
 #include<stdio.h>
-#define FORMAT "%s! C is cool!\n"
 int main(void)
 {
-	int num = 10;
-	printf_s(FORMAT, FORMAT);
-	printf_s("%d\n", ++num);
-	printf_s("%d\n", num++);
-	printf_s("%d\n", num--);
-	printf_s("%d\n", num);
+	int x;
+	int y = 55;
+	for (x = 0; x <= 75; x++)
+		printf_s("%d , %d\n", x, y);
 	return 0;
 }

@@ -16,7 +16,8 @@ char r(char ch) {
 int main()
 {
 	char s[30];
-	while (scanf_s("%s",s,30)==1)
+	s[29] = { 0 };
+	while (scanf_s("%s",s,29)==1)
 	{
 		int len = strlen(s);
 		int p = 1, m = 1;

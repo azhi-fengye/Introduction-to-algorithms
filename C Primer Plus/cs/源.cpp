@@ -1,9 +1,8 @@
+#include<Windows.h>
 #include<stdio.h>
 int main(void)
 {
-	int x;
-	int y = 55;
-	for (x = 0; x <= 75; x++)
-		printf_s("%d , %d\n", x, y);
+	char s[30];
+	scanf_s("%s", s,30
 	return 0;
 }

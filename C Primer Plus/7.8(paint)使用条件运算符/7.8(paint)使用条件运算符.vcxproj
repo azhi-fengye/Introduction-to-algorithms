@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bf50184a-d4ee-4b16-a884-aaf0c4f5771b}</ProjectGuid>
-    <RootNamespace>My20个斐波那契数</RootNamespace>
+    <ProjectGuid>{e304d5fb-1392-40f8-a4a3-e304a98349ed}</ProjectGuid>
+    <RootNamespace>My78paint使用条件运算符</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

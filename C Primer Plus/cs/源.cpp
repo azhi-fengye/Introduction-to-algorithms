@@ -1,14 +1,8 @@
-#include<stdio.h>
 #include<Windows.h>
-#define RONGQI "≤‚ ‘"
-int main()
+#include<stdio.h>
+int main(void)
 {
-	int ABCDEFG = 5;
-	char rongqi[100];
-	scanf_s("%s", rongqi,99);
-	HWND windowscs = FindWindow(NULL,RONGQI);
-	while (ABCDEFG)
-	{
-
-	}
+	char s[30];
+	scanf_s("%s", s,30
+	return 0;
 }

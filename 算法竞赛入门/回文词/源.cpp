@@ -16,7 +16,7 @@ char r(char ch) {
 int main()
 {
 	char s[30];
-	s[29] = { 0 };
+	s[29] = {};
 	while (scanf_s("%s",s,29)==1)
 	{
 		int len = strlen(s);
@@ -33,6 +33,7 @@ int main()
 			}
 		}
 		printf("%s -- is %s.\n\n", s, msg[m*2+p]);
+		printf("%d", len);
 	}
 	return 0;
 }

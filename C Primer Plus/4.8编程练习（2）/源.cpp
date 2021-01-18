@@ -7,10 +7,10 @@ d.在比姓名宽度长3的字段中打印名字；*/
 #include<string.h>
 int main(void)
 {
-	char name[20];
+	char name[20] = {};
 	int len_ming, len_xing;
 	printf_s("请输入您的名字：\n");
-	scanf_s("%s", name,sizeof(name));
+	scanf_s("%s", name,20);
 	len_ming = strlen(name);
 	printf_s("“%s”\n",name);
 	printf_s("“%20s”\n", name);

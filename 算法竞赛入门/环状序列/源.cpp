@@ -15,7 +15,7 @@ int less(const char* s, int p, int q)
 int main()
 {
 	int T;
-	char s[maxn];
+	char s[maxn] = {};
 	scanf_s("%d", &T);
 		scanf_s("%s", s, 105);
 		int ans = 0;

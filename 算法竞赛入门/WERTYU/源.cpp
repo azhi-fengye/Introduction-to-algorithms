@@ -3,7 +3,6 @@ char s[] = "`1234567890-=QWERTYUIOP[]\ASDFGHJKL;'ZXCVBNM,./";
 int main(void)
 {
 	int i, c;
-	scanf_s("%d", &ast);
 	while ((c = getchar()) != EOF)
 	{
 		for (i = 1; s[i] && s[i] != c; i++);

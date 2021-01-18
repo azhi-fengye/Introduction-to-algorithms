@@ -2,7 +2,7 @@
 #include<string.h>
 int main()
 {
-	char s[20], buf[99];
+	char s[20] = {}, buf[99];
 	int count = 0;
 	scanf_s("%s", &s, 20);
 	for (int abc = 100; abc <= 999; abc++)

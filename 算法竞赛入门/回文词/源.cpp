@@ -17,7 +17,7 @@ int main()
 {
 	char s[30];
 	s[29] = {};
-	while (scanf_s("%s",s,29)==1)
+	while (scanf_s("%s",s,29))
 	{
 		int len = strlen(s);
 		int p = 1, m = 1;

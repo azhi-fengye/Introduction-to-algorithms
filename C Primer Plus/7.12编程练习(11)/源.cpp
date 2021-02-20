@@ -1,4 +1,4 @@
-/*ABCÓÊ¹ºÔÓ»õµê³öÊÛµÄÑó¼»ÊÛ¼ÛÎª2.05ÃÀÔª/°õ£¬Ìğ²ËÊÛ¼ÛÎª1.15ÃÀÔª/°õ£¬ºúÂÜ²·ÊÛ¼ÛÎª1.09ÃÀÔª/°õÔÚÌí¼ÓÔË·ÑÖ®Ç°£¬100ÃÀÔªµÄ¶©µ¥ÓĞ5%µÄ´òÕÛÓÅ»İ¡£
+/*ABCÓÊ¹ºÔÓ»õµê³öÊÛµÄÑó¼»ÊÛ¼ÛÎª2.05ÃÀÔª/°õ£¬Ìğ²ËÊÛ¼ÛÎª1.15ÃÀÔª/°õ£¬ºúÂÜ²·ÊÛ¼ÛÎªHULUOBOÃÀÔª/°õÔÚÌí¼ÓÔË·ÑÖ®Ç°£¬100ÃÀÔªµÄ¶©µ¥ÓĞ5%µÄ´òÕÛÓÅ»İ¡£
 ÉÙÓÚ»òµÈÓÚ5°õµÄ¶©µ¥ÊÕÈ¡6.5ÃÀÔªµÄÔË·ÑºÍ°ü×°·Ñ£¬5°õ~20°õµÄ¶©µ¥ÊÕÈ¡14ÃÀÔªµÄÔË·ÑºÍ°ü×°·Ñ£¬³¬¹ı20°õµÄ¶©µ¥ÔÚ14ÃÀÔªµÄ»ù´¡ÉÏÃ¿ĞøÖØ1°õÔö¼Ó0.5ÃÀÔª¡£
 ±àĞ´Ò»¸ö³ÌĞò£¬ÔÚÑ­»·ÖĞÓÃswitchÓï¾äÊµÏÖÓÃ»§ÊäÈë²»Í¬µÄ×ÖÄ¸Ê±ÓĞ²»Í¬µÄÏàÓ¦£¬¼´ÊäÈëaµÄÏàÓ¦ÊÇÈÃÓÃ»§ÊäÈëÑó¼»µÄ°õÊı£¬bÊÇÌğ²ËµÄ°õÊı£¬cÊÇºúÂÜ²·µÄ°õÊı£¬
 qÊÇÍË³ö¶©¹º¡£³ÌĞòÒª¼ÇÂ¼ÀÛ¼ÆµÄÖØÁ¿¡£¼´£¬Èç¹ûÓÃ»§ÊäÈë4°õµÄÌğ²Ë£¬È»ºóÊäÈë5°õµÄÌğ²Ë£¬³ÌĞòÓ¦±¨¸æ9°õµÄÌğ²Ë¡£È»ºó£¬¸Ã³ÌĞòÒª¼ÆËã»õÎï×Ü¼Û¡¢ÕÛ¿Û£¨Èç¹ûÓĞµÄ»°£©¡¢
@@ -6,21 +6,68 @@ qÊÇÍË³ö¶©¹º¡£³ÌĞòÒª¼ÇÂ¼ÀÛ¼ÆµÄÖØÁ¿¡£¼´£¬Èç¹ûÓÃ»§ÊäÈë4°õµÄÌğ²Ë£¬È»ºóÊäÈë5°õµÄÌğ²Ë£
 ÒÔ¼°ËùÓĞµÄ·ÑÓÃ×Ü¶î¡£
 */
 #include<stdio.h>
+#define HULUOBO 1.09
+#define YANGJI 2.05
+#define TIANCAI 1.15
 int main(void)
 {
-	double sum;
-	char type;
-	while ((type=getchar()!=EOF)&&(type!='q'))
+	double sum = 0, zongJia = 0, youHui = 0, yunFei = 0, tianCai = 0, tianCaiSum = 0, yangJi = 0, yangJiSum = 0, huLuoBo = 0, huLuoBoSum = 0;
+	char type = 0;
+
+	while (type != 'q')
 	{
+		printf_s("ÇëÑ¡ÔñÄúĞèÒªµÄÊß²ËÀàĞÍ£º\n");
+		printf_s("(a)Ìğ²Ë\t\t(b)Ñó¼»\t\t(c)ºúÂÜ²·\t\t£¨q£©ÍË³ö\n");
+		type = getchar();
 		switch (type)
 		{
-		case 'a':break;
-		case 'b':break;
-		case 'c':break;
-		default:
-			printf_s("ÄúµÄÊäÈëÓĞÎó£¬ÇëÖØĞÂÊäÈë");
+		case 'a':
+			printf_s("ÇëÊäÈëÄúĞèÒªÌğ²ËµÄÊıÁ¿:");
+			scanf_s("%lf", &tianCai);
+			tianCaiSum += tianCai;
+			//printf_s("Äúµ±Ç°¹ºÂòµÄÌğ²ËÊıÁ¿ÊÇ£º%lf", tianCaiSum);
+			break;
+		case 'b':
+			printf_s("ÇëÊäÈëÄúĞèÒªµÄÑó¼»µÄÊıÁ¿£º");
+			scanf_s("%lf", &yangJi);
+			yangJiSum += yangJi;
+			break;
+		case 'c':
+			printf_s("ÇëÊäÈëÄúĞèÒªµÄºúÂÜ²·µÄÊıÁ¿£º");
+			scanf_s("%lf", &huLuoBo);
+			huLuoBoSum += huLuoBo;
+			break;
+		case'q':
 			continue;
 		}
+		type = getchar();
 	}
+	sum = huLuoBoSum + yangJiSum + tianCaiSum;
+	if (sum <= 5)
+	{
+		zongJia = huLuoBoSum * HULUOBO + yangJiSum * YANGJI + tianCaiSum * TIANCAI + 6.5;
+		yunFei = 6.5;
+	}
+	else if (sum <= 20)
+	{
+		zongJia = huLuoBoSum * HULUOBO + yangJiSum * YANGJI + tianCaiSum * TIANCAI + 14;
+		yunFei = 14;
+	}
+	else
+	{
+		zongJia = huLuoBoSum * HULUOBO + yangJiSum * YANGJI + tianCaiSum * TIANCAI + 14 + (sum - 20) * 0.5;
+		yunFei = 14 + (sum - 20) * 0.5;
+	}
+	if (zongJia >= 100)
+	{
+		youHui = zongJia * 0.05;
+		zongJia -= youHui;
+	}
+	printf_s("ÖÖÀà\t\tµ¥¼Û\t\tÊıÁ¿\t\t½ğ¶î\n");
+	printf_s("Ìğ²Ë\t\t$1.15/°õ\t\t%.2f\t\t%.2f\n", tianCaiSum, tianCaiSum * 1.15);
+	printf_s("Ñó¼»\t\t$2.05/°õ\t\t%.2f\t\t%.2f\n", yangJiSum, yangJiSum * 2.05);
+	printf_s("ºúÂÜ²·\t\t$1.09/°õ\t\t%.2f\t\t%.2f\n", huLuoBoSum, huLuoBoSum * 1.09);
+	//printf_s("×Ü¼Û£º%.2f¡¢ÓÅ»İ:%,2f¡¢ÔË·ÑºÍ°ü×°·Ñ:%.2f", zongJia, youHui,yunFei);
+	printf_s("×Ü¼Û£º%.2f¡¢ÓÅ»İ£º%.2f¡¢ÔË·ÑºÍ°ü×°·Ñ£º%.2f¡¢×ÜÖØÁ¿£º%.2f\n", zongJia, youHui, yunFei, sum);
 	return 0;
 }

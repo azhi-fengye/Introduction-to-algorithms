@@ -8,7 +8,7 @@ int main(void)
 	printf_s("Please type in a letter;type # to end my act.\n");//请打一封信;打#结束我的行为。
 	while ((ch = getchar()) != '#')
 	{
-		if ('\n' == ch)
+		if (ch=='\n')
 		{
 			continue;
 		}
